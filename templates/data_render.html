@@ -8,7 +8,9 @@
 <body>
     <center>
         <h1>This is the new renderpage</h1>
-        <h1>the render{{name}}</h1>
+{% if age < 10 %}
+        <h1>my age is{{age}}</h1>
+{% endif %}
     </center>
 </body>
 </html>
