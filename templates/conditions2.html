@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <h1>if else nested condition</h1>
+    {% if a  < b %}
+       {% if a < c %}
+        <h1>a is min {{a}}</h1>
+       {% else %}
+        <h2>b is min {{b}}</h2>
+       {% endif %}
+        <h3>c is min {{c}}</h3>
+    {% else %}
+      {% if a < c %}
+        <h4>a is max{{a}}</h4>
+      {% else %}
+        <h5>b is max{{b}}</h5>
+      {% endif %}
+        <h6>c is max{{c}}</h6>
+    {% endif %}        
+                 
+    </center>
+</body>
+</html>
