@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <center>
+ <!--- <center>
         <h1>if else conditions</h1>
 
        {% if a  > b %}
@@ -14,7 +14,16 @@
        {% else %}
         <h1>b is max {{b}}</h1>
        {% endif %}
-    </center>
+    </center>-->
+    <center>
+        <h1>for loop in  jinja tags</h1>
+        {% for a in hobbies %}
+         <h1>{{a}}</h1>
+        {% endfor %}
+        </center>
+        <center>
+            <h1><a href="{% url 'data_render' %}">conditions page go to data_render page</a></h1>
+        </center>
 
 </body>
 </html>

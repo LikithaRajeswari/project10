@@ -8,7 +8,7 @@ def data_render(request):
     return render(request,'data_render.html',context=d)
 
 def conditions(request):
-    d={'a':100,'b':200,'c':600}
+    d={'a':100,'b':200,'c':600,'hobbies':['drawing,crafting']}
     return render(request,'conditions.html',context=d)
 
 def conditions1(request):
@@ -18,3 +18,6 @@ def conditions1(request):
 def conditions2(request):
     d={'s':250,'b':350,'c':450}
     return render(request,'conditions2.html',context=d)
+
+
+
